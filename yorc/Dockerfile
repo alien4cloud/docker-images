@@ -2,6 +2,8 @@ FROM ystia/yorc:4.1.0
 
 RUN apk add jq && \
     apk add openjdk8 && \
+    apk add util-linux && \
+    apk add gettext && \
     cd /usr/local/bin && \
     curl -O https://storage.googleapis.com/kubernetes-release/release/v1.14.1/bin/linux/amd64/kubectl && \
     chmod a+x kubectl && \
