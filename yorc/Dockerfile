@@ -1,4 +1,4 @@
-FROM ystia/yorc:4.1.0
+FROM ystia/yorc:4.2.0
 
 RUN apk add jq && \
     apk add openjdk8 && \
